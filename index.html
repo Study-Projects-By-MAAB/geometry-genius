@@ -87,9 +87,8 @@
                         <p>Area (A) = b X h</p>
                         <div class="my-[22px]">
                             <!-- parallelogram base -->
-                            <input id="parallelogram-base"
-                                class="w-[95px] pl-3 py-[7px] rounded bg-[rgb(241,241,241)]" type="text"
-                                placeholder="b">
+                            <input id="parallelogram-base" class="w-[95px] pl-3 py-[7px] rounded bg-[rgb(241,241,241)]"
+                                type="text" placeholder="b">
                             <span class="ml-2 mr-4">cm</span>
                             <!-- parallelogram height -->
                             <input id="parallelogram-height"
@@ -107,7 +106,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Parallelogram card -->
+                <!-- Rhombus card -->
                 <!-- <div class="card w-96 bg-base-100 shadow-xl">
                     <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
                             alt="Shoes" /></figure>
@@ -119,6 +118,32 @@
                         </div>
                     </div>
                 </div> -->
+                <!-- Pentagon card -->
+                <div class="card py-[50px] w-96 bg-base-100 shadow-xl">
+                    <figure><img src="images/pentagon.png" alt="pentagon" /></figure>
+                    <div class="card-body text-center px-[43px]">
+                        <h2 class="card-title mx-auto">Pentagon</h2>
+                        <p>Area (A) = 0.5 X p X b</p>
+                        <div class="my-[22px]">
+                            <!-- pentagon perimeter -->
+                            <input id="pentagon-perimeter" class="w-[95px] pl-3 py-[7px] rounded bg-[rgb(241,241,241)]"
+                                type="text" placeholder="p">
+                            <span class="ml-2 mr-4">cm</span>
+                            <!-- pentagon apothem -->
+                            <input id="pentagon-apothem" class="w-[95px] pl-3 py-[7px] rounded bg-[rgb(241,241,241)]"
+                                type="text" placeholder="b">
+                            <span class="ml-2 mr-4">cm</span>
+                        </div>
+                        <div>
+                            <p class="text-xl">Area: <span id="pentagon-area"></span><span> cm<sup>2</sup></span>
+                            </p>
+                        </div>
+                        <div class="card-actions mt-[29px]">
+                            <button onclick="calculatePentagonArea()"
+                                class="btn btn-primary w-full text-xl font-bold">Calculate</button>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- Area calculation -->
             <div class="w-[437px] border-2 rounded-lg p-[30px]">
@@ -128,6 +153,7 @@
             </div>
         </div>
     </main>
+    <script src="scripts/pentagon-area.js"></script>
     <script src="scripts/parallelogram-area.js"></script>
     <script src="scripts/triangle-calculate.js"></script>
     <script src="scripts/rectangle-area.js"></script>
