@@ -46,7 +46,7 @@
                             <span class="ml-2 mr-4">cm</span>
                         </div>
                         <div>
-                            <p class="text-xl">Area: <span id="triangle-area"></span><span>cm<sup>2</sup></span></p>
+                            <p class="text-xl">Area: <span id="triangle-area"></span><span> cm<sup>2</sup></span></p>
                         </div>
                         <div class="card-actions mt-[29px]">
                             <button onclick="calculateTriangleArea()"
@@ -61,15 +61,17 @@
                         <h2 class="card-title mx-auto">Rectangle!</h2>
                         <p>Area (A) = w X l</p>
                         <div class="my-[22px]">
-                            <input id="rectangle-base" class="w-[95px] pl-3 py-[7px] rounded bg-[rgb(241,241,241)]"
-                                type="text" placeholder="w">
-                            <span class="ml-2 mr-4">cm</span>
-                            <input id="rectangle-height" class="w-[95px] pl-3 py-[7px] rounded bg-[rgb(241,241,241)]"
+                            <!-- rectangle length -->
+                            <input id="rectangle-length" class="w-[95px] pl-3 py-[7px] rounded bg-[rgb(241,241,241)]"
                                 type="text" placeholder="l">
+                            <span class="ml-2 mr-4">cm</span>
+                            <!-- rectangle width -->
+                            <input id="rectangle-width" class="w-[95px] pl-3 py-[7px] rounded bg-[rgb(241,241,241)]"
+                                type="text" placeholder="w">
                             <span class="ml-2 mr-4">cm</span>
                         </div>
                         <div>
-                            <p class="text-xl">Area: <span id="rectangle-area"></span><span>cm<sup>2</sup></span></p>
+                            <p class="text-xl">Area: <span id="rectangle-area"></span><span> cm<sup>2</sup></span></p>
                         </div>
                         <div class="card-actions mt-[29px]">
                             <button onclick="calculateRectangleArea()"
