@@ -144,6 +144,34 @@
                         </div>
                     </div>
                 </div>
+                <!-- Ellipse card -->
+                <div class="card py-[50px] w-96 bg-base-100 shadow-xl">
+                    <figure><img src="images/ellipse.png" alt="ellipse" /></figure>
+                    <div class="card-body text-center px-[43px]">
+                        <h2 class="card-title mx-auto">Ellipse</h2>
+                        <p>Area (A) = πab</p>
+                        <div class="my-[22px]">
+                            <!-- ellipse perimeter -->
+                            <input id="ellipse-major-radius"
+                                class="w-[95px] pl-3 py-[7px] rounded bg-[rgb(241,241,241)]" type="text"
+                                placeholder="a">
+                            <span class="ml-2 mr-4">cm</span>
+                            <!-- ellipse apothem -->
+                            <input id="ellipse-minor-radius"
+                                class="w-[95px] pl-3 py-[7px] rounded bg-[rgb(241,241,241)]" type="text"
+                                placeholder="b">
+                            <span class="ml-2 mr-4">cm</span>
+                        </div>
+                        <div>
+                            <p class="text-xl">Area: <span id="ellipse-area"></span><span> cm<sup>2</sup></span>
+                            </p>
+                        </div>
+                        <div class="card-actions mt-[29px]">
+                            <button onclick="calculateEllipseArea()"
+                                class="btn btn-primary w-full text-xl font-bold">Calculate</button>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- Area calculation -->
             <div class="w-[437px] border-2 rounded-lg p-[30px]">
@@ -153,10 +181,11 @@
             </div>
         </div>
     </main>
-    <script src="scripts/pentagon-area.js"></script>
-    <script src="scripts/parallelogram-area.js"></script>
     <script src="scripts/triangle-calculate.js"></script>
     <script src="scripts/rectangle-area.js"></script>
+    <script src="scripts/parallelogram-area.js"></script>
+    <script src="scripts/pentagon-area.js"></script>
+    <script src="scripts/ellipse-area.js"></script>
 </body>
 
 </html>
